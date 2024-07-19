@@ -1,0 +1,20 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "strict": true,
+        "allowJs": true,
+        "outDir": "wwwroot",
+        "rootDir": "src",        
+        "module": "ES2022",
+        "target": "ES2022",
+        "inlineSourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck":true
+        
+    },
+    "include": ["src"],
+    "exclude": [
+        "node_modules", "wwwroot", "bin", "obj", "gulpfile.js"
+    ]
+}

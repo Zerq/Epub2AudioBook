@@ -1,0 +1,19 @@
+{
+    "devDependencies": {
+        "@types/node": "20.14.8",
+        "tslint-clean-code": "0.2.10",
+        "typescript": "5.5.2",
+        "typescript-cli": "0.1.0",
+        "gulp": "5.0.0",
+        "gulp-cli":"3.0.0",
+ 
+        "electron": "31.2.0",
+        "electron-builder": "24.13.3",
+        "electron-webpack": "2.8.2",
+        "webpack": "4.42.1"
+    },
+    "scripts": {
+        "dev": "electron-webpack dev",
+        "compile": "electron-webpack"        
+     }
+}

@@ -1,0 +1,168 @@
+.FileViewOuter {
+    height: inherit;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.FileViewInner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    padding: 0;
+    margin: 0;
+    border: solid 2px rgb(0, 0, 0);
+    border-top-right-radius: 10px;
+    background-color: black;
+}
+
+.viewButton {
+    height: calc(100% - 3px);
+    margin: 2px;
+    border: 2px solid red;
+    background-color: yellow;
+    transition: background-color 125ms;
+}
+
+.viewButton:hover {
+    background-color: rgb(241 191 7);
+
+}
+
+.viewButton:active {}
+
+.head {
+    flex: 5%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: aquamarine;
+
+    background: rgb(111, 104, 213);
+    background: linear-gradient(190deg, rgba(111, 104, 213, 1) 0%, rgba(151, 151, 249, 1) 18%, rgba(120, 193, 208, 1) 61%, rgba(250, 254, 255, 1) 100%);
+    border-top-right-radius: 10px;
+    border-bottom: solid 2px black;
+}
+
+.headInner {
+    height: calc(100% - 1px);
+
+    border-top-right-radius: 10px;
+}
+
+.body {
+    background-color: white;
+    flex: 95%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.body div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-pack: start;
+}
+
+.body div div {
+    flex: calc(10% - 1px);
+    overflow: hidden;
+}
+
+
+.body data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: calc(100% - 2px);
+}
+
+.body data.dir label,
+.body data.dir img {
+    flex: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.body data.file label,
+.body data.file img {
+    flex: 25%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.body div div {}
+
+.body data .name {}
+
+.body data .size {
+    font-size: small;
+}
+
+.body data .date {
+    font-size: x-small;
+}
+
+.body {
+    scrollbar-color: #999 #333;
+}
+
+.body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+.body::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.contextMenu {
+    position: absolute;
+    background-color: silver;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    top: 2em;
+    border: solid 1px black;
+}
+
+.contextMenu Li {
+    padding: 5px;
+}
+
+.contextMenu Li:hover {
+    background-color: #999;
+}
+
+.contextMenu.hidden {
+    display: none;
+}
+
+.body table td {
+    vertical-align: middle;
+}
+
+.body table td img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.body table td span {
+    padding-left: 5px;
+    vertical-align: bottom;
+}
+
+.body table thead {}
+
+.body table tbody {}

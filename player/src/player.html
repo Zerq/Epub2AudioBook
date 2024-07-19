@@ -1,0 +1,36 @@
+<template id="Main">
+    <link rel="stylesheet" href="player.css" />
+    <div class="player">
+        <div class="controls">
+            <img id="Previous"
+                src="http://localhost:5117/Theme/Icon?theme=Win11&homeFolder=true&path=/actions/symbolic/media-seek-backward-symbolic.svg" />
+            <img id="Play"
+                src="http://localhost:5117/Theme/Icon?theme=Win11&homeFolder=true&path=/actions/symbolic/media-playback-start-symbolic.svg" />
+            <img id="Pause" style="display: none;"
+                src="http://localhost:5117/Theme/Icon?theme=Win11&homeFolder=true&path=/actions/symbolic/media-playback-pause-symbolic.svg" />
+            <img id="Eject" style="position: relative; left: -2px;"
+                src="http://localhost:5117/Theme/Icon?theme=Win11&homeFolder=true&path=/actions/symbolic/media-mount-symbolic.svg" />
+            <img id="Forward"
+                src="http://localhost:5117/Theme/Icon?theme=Win11&homeFolder=true&path=/actions/symbolic/media-seek-forward-symbolic.svg" />
+            <cute-gague id="progress" current="0" min="0" , max="100" style="flex:calc(100% - 128px);"></cute-gague>
+         
+        </div>
+        <div class="horizontal">
+            <div class="chapters">
+                <ul id="chapterView">
+                    <!---
+                <li class="active" data-parts="2">Prolog<audio src="test.mp3"></audio></Li>
+                <li data-parts="4">Chapter 1: Hooopla!<audio src="test.mp3"></audio></li>
+                <li data-parts="3">Chapter 2: Blarg<audio src="test.mp3"></audio></li>
+                <li data-parts="3">Chapter 3: Splorg<audio src="test.mp3"></audio></li>
+                <li data-parts="4">Epilog<audio src="test.mp3"></audio></li>
+                <li data-parts="1">Credits<audio src="test.mp3"></audio></li>
+                -->
+                </ul>
+            </div>
+            <div id="TextView">
+                <pre readonly></pre>
+            </div>
+        </div>
+    </div>
+</template>

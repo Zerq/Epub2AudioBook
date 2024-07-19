@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <template id="Main">
+            <div style="width: inherit; height: inherit;">
+                <div class="FileViewOuter">
+                    <div class="FileViewInner">
+                        <link rel="stylesheet" href="Fileview.css">
+                        <div class="head">
+                            <div class="headInner"><button class="viewButton">View</button><input type="checkbox"
+                                    class="viewCheckbox">
+                                <input class="viewTextBox">
+                            </div>
+                        </div>
+                        <div class="body">
+                            <Slot name="DisplayMode"></Slot>
+                        </div>
+                    </div>
+                </div>
+        </template>
+
+        <template id="Detail">
+            <table class="FileView-Detailed">
+                <thead>
+                    <tr>
+                        <td>
+                            FileName
+                        </td>
+                        <td>
+                            Size
+                        </td>
+                        <td>
+                            Data
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <slot name="DetailRow"></slot>
+                </tbody>
+            </table>
+        </template>
+
+        <template id="DetailRow">
+            <tr>
+                <td>
+                    <slot name="FileName"></slot>
+                </td>
+                <td>
+                    <slot name="Size"></slot>
+                </td>
+                <td>
+                    <slot name="Data"></slot>
+                </td>
+            </tr>
+        </template>
+
+        <template id="BigIcons">
+            <div id="BigIcons">
+                <slot slot="Path"></slot>
+                <slot slot="Parent"></slot>
+                <slot slot="Direcoties"></slot>
+                <slot slot="Files"></slot>
+            </div>
+        </template>
+
+        <template id="Directory">
+            <div class="directory">
+                <slot slot="Path"></slot>
+                <slot name="Icon" /><span>
+                <slot name="Name"></slot>
+            </div>
+        </template>
+
+        <template id="File">
+            <div class="file">
+                <slot slot="Path"></slot>
+                <slot name="image"></slot>
+                <slot name="Name"></slot>
+                <slot name="Date"></slot>
+                <slot name="Size"></slot>
+            </div>
+        </template>
+    </body>
+</html>

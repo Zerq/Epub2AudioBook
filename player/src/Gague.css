@@ -1,0 +1,30 @@
+.gague {
+    border: solid 2px black; 
+    flex: 100%;
+    margin-left: 5px;
+    background-color: silver;
+}
+
+.gague .progress {
+    background: rgb(111, 104, 213);
+    background: linear-gradient(190deg, rgba(111, 104, 213, 1) 0%, rgba(151, 151, 249, 1) 18%, rgba(120, 193, 208, 1) 61%, rgba(250, 254, 255, 1) 100%);
+    border-right: solid 3px black;
+    height: 100%;
+}
+
+.gague .progress {
+    color: black;
+    height: 100%;
+    display: flex;
+}
+
+.gague .progress span {
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gague .progress span {
+    margin: auto;
+    display: inline-block;
+}

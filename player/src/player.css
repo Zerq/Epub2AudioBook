@@ -1,0 +1,115 @@
+ body {
+        background-color: gray;
+        padding: 0;
+        margin: 0;
+    }
+
+    .player {
+        display: flex;
+        height: calc(100vh - 14px);
+        width: calc(100vw - 10px);
+        flex-direction: column;
+        background-color: gray;
+        padding: 5px;    
+    }
+
+    .player>.controls {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .player>.controls>* {
+        flex: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .chapters {
+        border: solid 2px black;
+        padding: 5px;
+        margin: 10px;
+        background-color: black;
+        color: white;
+    }
+    .chapters li ul li span {
+ 
+        color: silver;
+    }
+
+    .chapters ul,
+    .chapters ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .chapters ul li.active span {
+
+        color: yellow;
+        font-weight: bold;
+    }
+
+
+
+
+
+    .horizontal {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .horizontal .chapters {
+        flex: calc(15% - 10px);
+        width: calc(15% - 10px);
+        border-radius: 1em;
+        font-size: large;
+        user-select: none;
+        overflow-y: auto;
+        overflow-y: auto;
+        height: calc(100vh - 85px);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        scrollbar-color: #999 #333;
+        min-width: 6.5cm;
+    }
+
+    .horizontal .chapters li ul li span:hover{
+        color:darkcyan;
+    }
+
+    #chapterView > li > ul {
+        display: flex;
+        flex-direction: row;
+    } 
+    
+
+    #chapterView  span {
+        flex: auto;
+       margin-right: 1em;
+    } 
+    
+    .horizontal #TextView {
+        flex: 75%;
+        width: 75%;
+    }
+
+    .horizontal #TextView pre {
+        flex: calc(85% - 10px);
+        background-color: black;
+        color: white;
+        padding: 5ppx;
+        padding: 10px;
+        border-radius: 1em;
+    }
+
+    .horizontal #TextView pre {
+
+        font-size: smaller;
+        white-space: pre-wrap;
+        overflow-y: auto;
+        height: calc(100vh - 90px);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        scrollbar-color: #999 #333;
+    }

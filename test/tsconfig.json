@@ -1,0 +1,9 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowJs":true,
+        "declaration": true,
+        "module": "ES2020",
+        "target": "ES2020"
+    }
+}
