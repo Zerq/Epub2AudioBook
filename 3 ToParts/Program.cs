@@ -32,7 +32,7 @@ public class PartMaker
     {
 
 
-        args = new string[] { "/home/zerq/Downloads/ascendance-of-a-bookworm-part-5-volume-11.epub" };
+        args = new string[] { "/home/arch/Downloads/the-gamers-clones.epub" };
 
         var path = args[0].Replace(".epub", "_audio");
 

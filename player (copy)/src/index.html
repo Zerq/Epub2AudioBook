@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title></title>
+        <style>
+          body{
+            margin: 0;
+            padding: 0;
+            height: calc(100vh - 15px);
+            width: calc(100vw - 30px);
+            background-color: rgb(0, 0, 0);    
+          }
+        </style>
+    </head>
+    <body>
+      <div id="app"></div>
+      <script type="module" async>  
+        await import("./ThemeIconSource.js")
+        await import("./DirectoryService.js");
+        await import("./FileView.js");
+        await import("./Gague.js");
+        await import("./player.js");
+
+        const {Locales} = await import("./Locale.js");
+        const {RunEntry} = await import("./Entry.js");
+
+        
+
+        await RunEntry("app");
+     </script>
+    </body>
+</html>

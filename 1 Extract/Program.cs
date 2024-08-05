@@ -5,7 +5,7 @@ public class EpubExtractor
     {
 
         args = new string[]{
-            "/home/zerq/Downloads/ascendance-of-a-bookworm-part-5-volume-11.epub"
+            "/home/arch/Downloads/the-gamers-clones.epub"
         };
 
         new EpubExtractor().run(args);
