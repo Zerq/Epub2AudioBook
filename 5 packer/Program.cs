@@ -7,8 +7,7 @@ public class blarg
 {
     static public void Main(string[] args)
     {
-        //var path = args[0];
-        var path = "/home/zerq/Downloads/the-brilliant-healer-s-new-life-in-the-shadows-volume-1_audio";
+        var path = args[0];;
 
         DirectoryInfo dir = new DirectoryInfo(path);
         var defaultFile = path + "/file.abz";

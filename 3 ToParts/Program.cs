@@ -30,10 +30,6 @@ public class PartMaker
     }
     public static void Main(String[] args)
     {
-
-
-        args = new string[] { "/home/arch/Downloads/the-gamers-clones.epub" };
-
         var path = args[0].Replace(".epub", "_audio");
 
         if (!Directory.Exists(path))

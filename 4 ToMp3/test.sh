@@ -1,1 +1,1 @@
-./mp3Convert.sh /home/arch/Downloads/the-gamers-clones_audio
+./mp3Convert.sh /home/<usernamewhatever>/Downloads/someEbook_audio

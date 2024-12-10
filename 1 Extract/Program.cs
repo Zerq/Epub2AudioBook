@@ -3,11 +3,6 @@ public class EpubExtractor
 {
     public static void Main(string[] args)
     {
-
-        args = new string[]{
-            "/home/arch/Downloads/the-gamers-clones.epub"
-        };
-
         new EpubExtractor().run(args);
     }
 

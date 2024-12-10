@@ -1,2 +1,1 @@
-./convert.sh /home/arch/Downloads/the-gamers-clones_audio
-
+./convert.sh "/home/<usernamewhatever>/Downloads/someEbook_audio

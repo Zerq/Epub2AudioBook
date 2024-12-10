@@ -84,6 +84,8 @@ namespace Omnicatz
         [UI] private TextView textview = null;
         [UI] private Box treeViewContainer = null;
 
+        [UI] private Adjustment adjustment1 = null;
+
         public MainWindow() : this(new Builder("MainWindow.glade"))
         {
         }
@@ -206,7 +208,7 @@ private  LibVLC libvlc = new LibVLC();
 
                         this.player.Media = new Media(this.libvlc, input);         
 
-                        this.player.Playing += playing;      
+                        this.player.PositionChanged += playing;      
                     
                     
                 }
@@ -215,7 +217,7 @@ private  LibVLC libvlc = new LibVLC();
 
         private void playing(object sender, EventArgs e)
         {
-            this.progre
+            adjustment1.Value =      this.player.Position * 100;
         }
 
         public void Play()
@@ -264,6 +266,10 @@ private  LibVLC libvlc = new LibVLC();
             this.ShowFileDialog("load Abz", ".abz").ContinueWith(async p =>
             {
                 var file = await p;
+
+                var chapters = this.ReandManifest(file);
+
+
                 ReadMp3(file, "000--Title_Page_p000");
             });
         }
