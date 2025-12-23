@@ -1,3 +1,12 @@
+this project is kinda dead because edge-tts stopped working presumably the service is now changed so it only runs through the browser.
+i could sub it out for the google equivlent which worked last time i tried but currently working on a TTS reader lets me run it live in the browser... that requires active internet access though so may re-visit this...
+
+that or i need to dig into gettign a local tts running... idk if i could somehow make my own browser implementation that could tap into the default api and expose my own tts implemenation hmmm.. crazy idea :p 
+I would rahter run thing locally... something to tinker with maybe i can get somehow extend webwindow... idk...
+
+
+
+
 currently set up to use edge-tts which is basically a python library that taps into the same text-to-speehc engine though it could use any other engine like espeak, mimic3 festival etc... fairly simple the change.
 
 the edge-tts dependancy has to be installed separatly this is made for linux primarily in its current state.... 
